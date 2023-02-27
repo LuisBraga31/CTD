@@ -133,7 +133,7 @@ function confirmacao() {
 
         let teste = dificuldade();
         console.log(teste);
-        alert(`Vamos começar o jogo ${Luis}, o nível de dificu`)
+        alert(`Vamos começar o jogo ${nome}, o nível de dificuldade foi ${teste}`);
         start(nome, teste);
     
         } else {
