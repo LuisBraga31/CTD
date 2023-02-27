@@ -1,4 +1,3 @@
-
 function start(nome, dificuldade) {
     
     let pontuacaoJogador = 0;
@@ -111,7 +110,7 @@ function dificuldade() {
     do {
         
         let dificuldade = prompt('Dificuldade: Fácil - 1, Normal -2, Difícil -3 ');
-        console.log(dificuldade > 3 && dificuldade < 1);
+        
         if(dificuldade > 3 || dificuldade < 1) {
             alert('Essa dificuldade não existe');
         } else {
@@ -130,11 +129,10 @@ function confirmacao() {
     if (confirmacao === true) {
 
         let nome = prompt('Digite seu nome para Jogar: ');
+        let dificuldadeEscolhida = dificuldade();
 
-        let teste = dificuldade();
-        console.log(teste);
-        alert(`Vamos começar o jogo ${nome}, o nível de dificuldade foi ${teste}`);
-        start(nome, teste);
+        alert(`Vamos começar o jogo ${nome}, o nível de dificuldade foi ${dificuldadeEscolhida}`);
+        start(nome, dificuldadeEscolhida);
     
         } else {
     
@@ -144,13 +142,3 @@ function confirmacao() {
 }
 
 confirmacao();
-
-
-
-// DIFICULDADE
-
-// FACIL
-
-//NORMAL
-
-// DIFICIL
