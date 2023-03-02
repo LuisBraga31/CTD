@@ -10,6 +10,13 @@ body {
   background-color: rgb(219, 219, 219);
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;  
+}
+
+
+
 #botao {
   padding: 10px;
   cursor: pointer;
@@ -21,6 +28,7 @@ body {
 }
 
 h1 {
+  width: 100%;
   padding: .5em 1em;
   background-color: white;
   border-bottom: 1px solid lightgrey;
